@@ -35,15 +35,15 @@ class Song
     return gen_hash
   end
   
-   def self.artist_count
+  def self.artist_count
     art_hash = {}
     @@artists.each do |artist|
-      if gen_hash.include?(genre)
-        gen_hash[genre] += 1
+      if art_hash.include?(artist)
+        art_hash[artist] += 1
       else
-        gen_hash[genre] = 1
+        art_hash[artist] = 1
       end 
     end
-    return gen_hash
+    return art_hash
   end 
 end 
